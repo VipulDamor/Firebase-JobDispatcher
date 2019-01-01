@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 .setLifetime(Lifetime.FOREVER)
                 .setRecurring(true)
                 .setTag(JObTag)
-                .setTrigger(Trigger.executionWindow(5, 5))
+                .setTrigger(Trigger.executionWindow(0, 1))
                 .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
                 .setReplaceCurrent(false)
                 .setConstraints(Constraint.ON_ANY_NETWORK) // TODO: 11/12/18  if you need network
